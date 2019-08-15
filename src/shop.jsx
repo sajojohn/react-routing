@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 function Shop() {
   useEffect(() => {
@@ -14,7 +14,6 @@ function Shop() {
       }),
     });
     const response = await data.json();
-    console.log(response.data);
     setItems(response.data);
   };
 
